@@ -19,8 +19,12 @@ public class Punto {
         this.coordenadaY = coordenadaY;
     }
 
-    public double calcularDistanciaEntreDosPuntos(Punto puntoA, Punto puntoB){
-       return Math.sqrt( Math.pow((puntoB.coordenadaX - puntoA.coordenadaX), 2) + Math.pow((puntoB.coordenadaY - puntoA.coordenadaY), 2) );
+    public Punto() {
+    }
+
+    
+    public double calcularDistanciaEntreDosPuntos(Punto puntoB){
+       return Math.sqrt( Math.pow((puntoB.coordenadaX - this.coordenadaX), 2) + Math.pow((puntoB.coordenadaY - this.coordenadaY), 2) );
     }
     
     public double getCoordenadaX() {
