@@ -24,44 +24,19 @@ public class Rectangulo {
         this.altura = altura;
     }
 
-    public void mostrarPuntos(){
-        Punto[] listaPuntos = cargarPuntos();
-        int count=2;
-        for (Punto p : listaPuntos) {
-            System.out.println("Punto"+ count +" (X-Y): (" + p.getCoordenadaX()+" - "+ p.getCoordenadaY() +")");
-            count++;
-        }
-            
-        
-    }
-    
-    public Punto[] cargarPuntos(){
+    public Punto[] cargarPuntosDeRectangulo(){
         Punto[] puntos = new Punto[3];
-            puntos[0] = calcularPunto(2,this.punto1, this.base);
-            puntos[1] = calcularPunto(3,puntos[0],this.altura);
-            puntos[2] = calcularPunto(4,this.punto1, this.altura);
+            puntos[0] = punto1.calcularPunto(2,this.punto1, this.base);
+            puntos[1] = punto1.calcularPunto(3,puntos[0],this.altura);
+            puntos[2] = punto1.calcularPunto(4,this.punto1, this.altura);
         
         return puntos;        
     }
     
-    public Punto calcularPunto(int numPunto, Punto punto, double aux){
-        Punto puntoAux = new Punto();
-       switch(numPunto){
-           case 2:
-               puntoAux.setCoordenadaX( punto.getCoordenadaX() + aux );
-               puntoAux.setCoordenadaY( punto.getCoordenadaY());
-               break;
-           case 3:
-               puntoAux.setCoordenadaX( punto.getCoordenadaX());
-               puntoAux.setCoordenadaY( punto.getCoordenadaY() + aux );               
-               break;
-           case 4:   
-               puntoAux.setCoordenadaX( punto.getCoordenadaX());
-               puntoAux.setCoordenadaY( punto.getCoordenadaY() + aux );
-               break;
-       }
-      return puntoAux;
+    public void mostrarPuntos(){
+       punto1.mostrarPuntos(cargarPuntosDeRectangulo());
     }
+    
     
     public Punto getPunto1() {
         return punto1;
