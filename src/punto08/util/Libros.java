@@ -3,8 +3,6 @@ package punto08.util;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import punto05.dominio.Circulo;
-import punto07.dominio.Auto;
 import punto08.dominio.Libro;
 
 public class Libros {
