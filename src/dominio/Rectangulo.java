@@ -33,10 +33,25 @@ public class Rectangulo {
         return puntos;        
     }
     
+    public double calcularSuperficieRectangulo(){
+        return this.base*this.altura;
+    }
+    
+    public double calcularPerimetroRectangulo(){
+        return 2*this.base + 2*this.altura;
+    }
+    
     public void mostrarPuntos(){
        punto1.mostrarPuntos(cargarPuntosDeRectangulo());
     }
     
+    public void mostrarSuperficie(){
+        System.out.println("La Superficie del rectangulo es: " + calcularSuperficieRectangulo());
+    }
+    
+    public void mostrarPerimetro(){
+        System.out.println("El Perimetro del rectangulo es: " + calcularPerimetroRectangulo());
+    }
     
     public Punto getPunto1() {
         return punto1;

@@ -5,20 +5,15 @@
  */
 package principal;
 
-import dominio.Punto;
-import dominio.Rectangulo;
+import dominio.AltaZapatilla;
 
 /**
  *
  * @author tito
  */
-public class Punto02 {
+public class Punto11 {
     public static void main(String[] args) {
-        
-        Rectangulo rectangulo = new Rectangulo(new Punto(3, 4), 12, 4);
-        rectangulo.mostrarPuntos();
-        rectangulo.mostrarSuperficie();
-        rectangulo.mostrarPerimetro();
-        
+        AltaZapatilla alta = new AltaZapatilla();        
+        alta.iniciar();
     }
 }

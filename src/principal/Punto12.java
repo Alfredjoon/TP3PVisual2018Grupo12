@@ -5,20 +5,15 @@
  */
 package principal;
 
-import dominio.Punto;
-import dominio.Rectangulo;
+import dominio.PrincipalLibro;
 
 /**
  *
  * @author tito
  */
-public class Punto02 {
+public class Punto12 {
     public static void main(String[] args) {
-        
-        Rectangulo rectangulo = new Rectangulo(new Punto(3, 4), 12, 4);
-        rectangulo.mostrarPuntos();
-        rectangulo.mostrarSuperficie();
-        rectangulo.mostrarPerimetro();
-        
+        PrincipalLibro principal = new PrincipalLibro();
+        principal.iniciar();
     }
 }
