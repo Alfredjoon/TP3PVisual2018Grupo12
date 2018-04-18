@@ -68,7 +68,7 @@ public class Triangulo {
             System.out.println("Se ah formado la figura");
             
         } else {
-            System.out.println("No puntos no corresponden a un triangulo");
+            System.out.println("Los puntos no corresponden a un triangulo");
             
         }
     }

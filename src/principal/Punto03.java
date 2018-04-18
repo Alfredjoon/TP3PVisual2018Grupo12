@@ -26,24 +26,21 @@ public class Punto03 {
        
        Scanner scan = new  Scanner (System.in);
         System.out.println("ingrese cordenadas X del punto A");
-        int cordenadaAx= scan.nextInt();
-        t.getPuntoA().setCoordenadaX(cordenadaAx);
+        int cordenadaAx= scan.nextInt();        
         System.out.println("ingrese cordenadas Y del punto A");
         int cordenadaAy= scan.nextInt();
-        t.getPuntoA().setCoordenadaY(cordenadaAy);
+            t.setPuntoA(new dominio.Punto03(cordenadaAx, cordenadaAy));
         System.out.println("ingrese cordenadas X del punto B");
         int cordenadaBx= scan.nextInt();
-        t.getPuntoB().setCoordenadaX(cordenadaBx);
         System.out.println("ingrese cordenadas Y del punto B");
         int cordenadaBy= scan.nextInt();
-        t.getPuntoB().setCoordenadaY(cordenadaBy);
+            t.setPuntoB(new dominio.Punto03(cordenadaBx, cordenadaBy));
         System.out.println("ingrese cordenadas X del punto C");
         int cordenadaCx= scan.nextInt();
-        t.getPuntoC().setCoordenadaX(cordenadaCx);
         System.out.println("ingrese cordenadas X del punto C");
         int cordenadaCy= scan.nextInt();
-        t.getPuntoC().setCoordenadaY(cordenadaCy);
-     
+            t.setPuntoC(new dominio.Punto03(cordenadaCx, cordenadaCy));
+        
        t.verificarTriangulo();
        
         
