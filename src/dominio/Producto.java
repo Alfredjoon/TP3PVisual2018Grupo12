@@ -13,14 +13,18 @@ public class Producto {
     
     private int codigo;
     private String nombre; 
-    private float precioU;
-    private int cuotas;
+    private double precioU;
+    
 
-    public Producto(int codigo, String nombre, float precioU, int cuotas) {
+    public Producto(int codigo, String nombre, double precioU) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precioU = precioU;
-        this.cuotas = cuotas;
+        
+    }
+
+    public Producto() {
+        
     }
 
     public int getCodigo() {
@@ -43,17 +47,11 @@ public class Producto {
         return precioU;
     }
 
-    public void setPrecioU(float precioU) {
+    public void setPrecioU(double precioU) {
         this.precioU = precioU;
     }
 
-    public int getCuotas() {
-        return cuotas;
-    }
-
-    public void setCuotas(int cuotas) {
-        this.cuotas = cuotas;
-    }
+   
     
     
 }

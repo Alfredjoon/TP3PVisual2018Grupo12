@@ -36,10 +36,10 @@ public class LibroUtil {
         
         
         System.out.println("Ingrese Titulo de Libro (sin espacios)");
-        String aux = scan.next();
+        String titulo = scan.next();
         int count=0;
         for (Libro l : listaLibros) {
-                if(l.getTitulo().trim().replace(" ","").toUpperCase().equals(aux.toUpperCase())){
+                if(l.getTitulo().trim().replace(" ","").toUpperCase().equals(titulo.toUpperCase())){
                       
                             System.out.println(l.getISBM()+"\t" +  l.getTitulo() + "\t"+ l.getAutor() + "\t" + l.getPrecio() );
                            

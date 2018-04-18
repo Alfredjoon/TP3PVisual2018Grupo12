@@ -5,6 +5,8 @@
  */
 package principal;
 
+import punto10.util.ProductoUtil;
+
 /**
  *
  * @author Alfred
@@ -18,6 +20,10 @@ public class Punto10 {
     //Ramon es sin vistas, en consola tenemos que hacer la tabla
     public static void main(String[] args) {
         // TODO code application logic here
+        ProductoUtil p = new ProductoUtil();
+        p.cargaProductos();
+        p.mostrarProductos();
+        p.calcularCuotas();
         
     }
     

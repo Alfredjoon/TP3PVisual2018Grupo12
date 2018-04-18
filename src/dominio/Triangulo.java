@@ -17,6 +17,7 @@ public class Triangulo {
 
     public Triangulo() {
         
+        
     }   
 
     public Punto03 getPuntoA() {
