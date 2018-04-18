@@ -17,7 +17,7 @@ public class Triangulo {
 
     public Triangulo() {
         
-    }
+    }   
 
     public Punto03 getPuntoA() {
         return puntoA;
@@ -49,7 +49,12 @@ public class Triangulo {
         this.puntoC = puntoC;
     }
     
+
+    
+    
     public void verificarTriangulo(){
+   
+     
     int distanciaAB;
     int distanciaBC;
     int distanciaCA;

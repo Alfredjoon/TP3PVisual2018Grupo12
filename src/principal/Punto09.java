@@ -5,20 +5,21 @@
  */
 package principal;
 
+import punto09.util.LibroUtil;
+
 /**
  *
  * @author Alfred
  */
-public class Punto10 {
+public class Punto09 {
 
     /**
      * @param args the command line arguments
      */
-    
-    //Ramon es sin vistas, en consola tenemos que hacer la tabla
     public static void main(String[] args) {
-        // TODO code application logic here
-        
+        LibroUtil unLibro = new LibroUtil();
+        unLibro.cargaLibro();
+        unLibro.buscarPorTitulo();
     }
     
 }

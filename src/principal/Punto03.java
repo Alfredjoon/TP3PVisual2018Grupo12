@@ -19,28 +19,37 @@ public class Punto03 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner scan = new Scanner (System.in);
-        Triangulo unTriangulo = null ;
         
+        
+       Triangulo t = new Triangulo();
+       
+       
+       Scanner scan = new  Scanner (System.in);
         System.out.println("ingrese cordenadas X del punto A");
         int cordenadaAx= scan.nextInt();
-        unTriangulo.getPuntoA().setCoordenadaX(cordenadaAx);
+        t.getPuntoA().setCoordenadaX(cordenadaAx);
         System.out.println("ingrese cordenadas Y del punto A");
         int cordenadaAy= scan.nextInt();
-        unTriangulo.getPuntoA().setCoordenadaY(cordenadaAy);
+        t.getPuntoA().setCoordenadaY(cordenadaAy);
         System.out.println("ingrese cordenadas X del punto B");
         int cordenadaBx= scan.nextInt();
-        unTriangulo.getPuntoA().setCoordenadaX(cordenadaBx);
+        t.getPuntoB().setCoordenadaX(cordenadaBx);
         System.out.println("ingrese cordenadas Y del punto B");
         int cordenadaBy= scan.nextInt();
-        unTriangulo.getPuntoA().setCoordenadaX(cordenadaBy);
+        t.getPuntoB().setCoordenadaY(cordenadaBy);
         System.out.println("ingrese cordenadas X del punto C");
         int cordenadaCx= scan.nextInt();
-        unTriangulo.getPuntoA().setCoordenadaX(cordenadaCx);
+        t.getPuntoC().setCoordenadaX(cordenadaCx);
         System.out.println("ingrese cordenadas X del punto C");
         int cordenadaCy= scan.nextInt();
-        unTriangulo.getPuntoA().setCoordenadaX(cordenadaCy);
-        unTriangulo.verificarTriangulo();
+        t.getPuntoC().setCoordenadaY(cordenadaCy);
+     
+       t.verificarTriangulo();
+       
+        
+        
+        
+        
         
     }
     

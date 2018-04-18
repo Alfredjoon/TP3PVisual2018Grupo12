@@ -5,7 +5,7 @@
  */
 package principal;
 
-import java.util.Scanner;
+import dominio.ArregloNumero;
 
 /**
  *
@@ -18,28 +18,9 @@ public class Punto04 {
      */
     public static void main(String[] args) {
         
-       Scanner scan = new Scanner (System.in);
-        int [] arregloEnteros = new int[10];
-        int maximo=0;
-        int minimo=0;
-        int suma=0;
-        int promedio;
-       
-        for (int i = 0 ; i<arregloEnteros.length;i++){
-        System.out.println("Ingrese numero al arreglo");
-        arregloEnteros[i]= scan.nextInt();
-        if (arregloEnteros[i]>maximo){
-            maximo=arregloEnteros[i];
-            minimo=arregloEnteros[i];
-        }else if (arregloEnteros[i]< minimo)
-            minimo=arregloEnteros[i];
-        suma=suma+arregloEnteros[i];
-        }
-        promedio=suma/10;
-        System.out.println("el maximo numero es " +maximo);
-        System.out.println("el minimo numero es " +minimo);
-        System.out.println("el promedio de los numeros es " +promedio);
-        }
+        ArregloNumero unArregloNumero = new ArregloNumero(10);
+        unArregloNumero.mostrarMenorMayorPromedio();
+      
     }
-    
+}
 
