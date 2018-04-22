@@ -1,5 +1,6 @@
 package punto05.dominio;
 
+//clase del dominio
 public class Circulo {
 	private double radio;
 	
