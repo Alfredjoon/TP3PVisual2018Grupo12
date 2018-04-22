@@ -26,6 +26,7 @@ public class Circulos {
 		super();
 	}
 	public void precargarCirculos(){
+                //hace una carga inicial de circulos al array circulos
 		System.out.println("precargados");
 		Circulo c1 = new Circulo(3.4);
 		Circulo c2 = new Circulo(5.4);
